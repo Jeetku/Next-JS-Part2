@@ -1,0 +1,25 @@
+.loader-line {
+  width: 100px;
+  height: 3px;
+  position: relative;
+  overflow: hidden;
+  background-color: aliceblue;
+  margin: 10px auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+.loader-line:before {
+  content: "";
+  position: absolute;
+  left: -50%;
+  height: 3px;
+  width: 40%;
+  background-color: coral;
+  -webkit-animation: lineAnim 1s linear infinite;
+  -moz-animation: lineAnim 1s linear infinite;
+  animation: lineAnim 1s linear infinite;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
